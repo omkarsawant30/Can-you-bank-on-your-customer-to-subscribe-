@@ -82,3 +82,45 @@ fit = randomForest(as.factor(y )~ ., data = bf_train)
 ### Make predictions on test and submit 
 test.predictions = predict(fit, newdata = bf_test)
 write.csv(test.predictions,file = "bankingsubs.csv", row.names = F)
+
+#--------------------------------------------------------QUIZ-----------------------------------------------------------------
+#(1)- Find mean of the variable age. Round off to 2 decimal places.
+#Ans - mean(bank_train$age)
+# 40.91
+      
+#(2) - Total number of outliers present in the variable balance.Use ‘Q1-1.5*IQR’ to calculate lower limit and ‘Q3 + 1.5×IQR’ 
+# to calculate upper limit. calculate the count of values in variable balance which are beyond these limits.
+#Ans - NA
+      
+#(3) Find the variance of variable balance.
+#Ans -var(bank_train$balance)
+# 9273256
+      
+#(4) which function is used to remove multicollinearity among variables?
+#Ans -vif
+      
+#(5) Model with 'lower AIC' value is a better model or the model with 'higher AIC' value?
+#Ans -lower AIC
+      
+#(6) Should the variable ID be included in building the model?
+#Ans -No
+      
+#(7) Does validation help in generalising the model?
+#Ans -Yes
+      
+#(8) Whether the data given ( train data ) is a balanced or extremely imbalanced data
+#( ratio of response class counts even more extreme than 5%:95%)?
+#Ans -Balanced
+      
+#(9) How is box plot upper whisker is calculated ?
+#Ans - Q3 + 1.5×IQR
+      
+#(10) R2 or adjusted R2, which metric to be used to check goodness of the model?
+#Ans -Adjusted R2
+
+      
+
+
+
+      
+
